@@ -8,18 +8,18 @@ https://nodejs.org/
 
 ### Install Node Package
 
-npm install -g grunt-cli
+`npm install -g grunt-cli`
 
 ## Create New Project
 
 if you wanto to create new Project, path(C:\project\test)
 
-mkdir C:\project\test
+`mkdir C:\project\test`
 
-cd C:\project\test
+`cd C:\project\test`
 
-grunt-init KO-NODE
+`grunt-init KO-NODE`
 
-npm install
+`npm install`
 
-grunt resolve
+`grunt resolve`
