@@ -1,0 +1,23 @@
+{
+  "name": "{%= name %}",
+  "version": "0.0.0",
+  "description": "{%= description %}",
+  "main": "app.js",
+  "author": {
+    "name": "{%= author %}"
+  },
+  "dependencies": {
+    "express": "^3.4.4"
+  },
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "node-dev": "^2.6.1"
+  }
+}
