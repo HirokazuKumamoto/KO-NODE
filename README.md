@@ -42,10 +42,11 @@ if you wanto to create new Project, path(C:\project\test)
 
 `http://[hostname]:3000`
 
-## Manual Compile Typescript
+## Development
+### Manual Compile Typescript
 
 `grunt compile`
 
-## Auto Compile Typescript on File Edited
+### Auto Compile Typescript on File Edited
 
 `grunt watch`
