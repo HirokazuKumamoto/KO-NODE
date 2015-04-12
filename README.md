@@ -38,6 +38,10 @@ if you wanto to create new Project, path(C:\project\test)
 
 `node-dev app.js`
 
+## Access App
+
+`http://[hostname]:3000`
+
 ## Manual Compile Typescript
 
 `grunt compile`
