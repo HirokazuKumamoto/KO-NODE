@@ -6,9 +6,19 @@ Knockout and Node.js(express) template of Grunt
 
 https://nodejs.org/
 
+### Install git client
+
+https://msysgit.github.io/
+
+### get this template
+
+`cd C:\Users\%USER_PROFILE%`
+
+`git clone https://github.com/Hirokuman/KO-NODE.git .grunt-init/KO-NODE`
+
 ### Install Node Package
 
-`npm install -g grunt-cli`
+`npm install -g node-dev grunt-cli grunt-init`
 
 ## Create New Project
 
