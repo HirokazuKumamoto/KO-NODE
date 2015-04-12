@@ -1,5 +1,5 @@
 # KO-NODE
-Knockout and Node.js(express) template of Grunt
+Knockout.js and Node.js(express) template of Grunt
 
 ## Preparation
 ### Install Node.js
@@ -10,7 +10,7 @@ https://nodejs.org/
 
 https://msysgit.github.io/
 
-### get this template
+### Get this template on Windows
 
 `cd C:\Users\%USER_PROFILE%`
 
@@ -33,3 +33,15 @@ if you wanto to create new Project, path(C:\project\test)
 `npm install`
 
 `grunt resolve`
+
+## Start Node
+
+`node-dev app.js`
+
+## Manual Compile Typescript
+
+`grunt compile`
+
+## Auto Compile Typescript on File Edited
+
+`grunt watch`
