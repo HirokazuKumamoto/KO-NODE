@@ -1,9 +1,13 @@
 # KO-NODE
 Knockout.js and Node.js(express) template of Grunt
+
 built-in
---jquery
---bootstrap
---knockout
+
+・jquery
+
+・bootstrap
+
+・knockout
 
 ## Preparation
 ### Install Node.js
