@@ -1,3 +1,6 @@
+/// <reference path="../../../../typings/jquery/jquery.d.ts" />
+/// <reference path="../../../../typings/knockout/knockout.d.ts" />
+
 class ViewModel {
 
   private static INSTANCE:ViewModel = new ViewModel();

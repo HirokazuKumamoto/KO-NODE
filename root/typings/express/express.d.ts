@@ -1,4 +1,4 @@
-﻿// Type definitions for Express 3.1
+// Type definitions for Express 3.1
 // Project: http://expressjs.com
 // Definitions by: Boris Yankov <https://github.com/borisyankov/>
 // DefinitelyTyped: https://github.com/borisyankov/DefinitelyTyped

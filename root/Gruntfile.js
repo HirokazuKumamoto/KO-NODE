@@ -7,6 +7,21 @@ module.exports = function(grunt) {
       install: {
       }
     },
+    ts: {
+      options: {
+        target: 'es5',
+        module: 'commonjs',
+        sourceMap: false,
+        preserveConstEnums: false,
+        compiler: './node_modules/grunt-ts/node_modules/typescript/bin/tsc'
+      },
+      app: {
+        src: ["**/app.ts", "!node_modules/**/*.ts", "!typings/**/*.ts"]
+      },
+      script: {
+        src: ["**/*.ts", "!**/app.ts", "!node_modules/**/*.ts", "!typings/**/*.ts"]
+      },
+    },
     clean: {
       files: ['public/dist']
     },
@@ -68,18 +83,14 @@ module.exports = function(grunt) {
         }]
       },
     },
-    jshint: {
-      options: {
-        jshintrc: true
-      },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-    },
     watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+      app: {
+        files: 'app.ts',
+        tasks: ['ts:app']
+      },
+      script: {
+        files: 'public/src/assets/js/*.ts',
+        tasks: ['ts:script']
       },
     },
   });
@@ -92,8 +103,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks("grunt-ts");
 
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('resolve', ['bower:install', 'concat:js', 'concat:css', 'copy:fonts', 'copy:cssmap']);
+  grunt.registerTask('compile', ['ts:app', 'ts:script']);
+  grunt.registerTask('resolve', ['bower:install', 'concat:js', 'concat:css', 'copy:fonts', 'copy:cssmap', 'ts']);
   grunt.registerTask('build', ['jshint', 'clean', 'copy:dist', 'uglify', 'cssmin']);
 };
