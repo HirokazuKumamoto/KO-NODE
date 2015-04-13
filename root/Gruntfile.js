@@ -15,6 +15,9 @@ module.exports = function(grunt) {
         preserveConstEnums: false,
         compiler: './node_modules/grunt-ts/node_modules/typescript/bin/tsc'
       },
+      default: {
+        src: ["**/*.ts", "!node_modules/**/*.ts", "!typings/**/*.ts"]
+      },
       app: {
         src: ["**/app.ts", "!node_modules/**/*.ts", "!typings/**/*.ts"]
       },
@@ -107,6 +110,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('compile', ['ts:app', 'ts:script']);
-  grunt.registerTask('resolve', ['bower:install', 'concat:js', 'concat:css', 'copy:fonts', 'copy:cssmap', 'ts']);
+  grunt.registerTask('resolve', ['bower:install', 'concat:js', 'concat:css', 'copy:fonts', 'copy:cssmap', 'ts:default']);
   grunt.registerTask('build', ['jshint', 'clean', 'copy:dist', 'uglify', 'cssmin']);
 };
