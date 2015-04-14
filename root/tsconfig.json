@@ -13,10 +13,10 @@
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./Scripts/typings/express/express.d.ts",
-        "./Scripts/typings/jquery/jquery.d.ts",
-        "./Scripts/typings/knockout/knockout.d.ts",
-        "./Scripts/typings/node/node.d.ts",
+        "./typings/express/express.d.ts",
+        "./typings/jquery/jquery.d.ts",
+        "./typings/knockout/knockout.d.ts",
+        "./typings/node/node.d.ts",
         "./app.ts",
         "./public/src/assets/js/script.ts"
     ]
